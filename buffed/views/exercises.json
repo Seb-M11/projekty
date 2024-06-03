@@ -1,0 +1,452 @@
+[
+  {
+    "id": 1,
+    "name": "Stair Climbing",
+    "exercise_type_id": 1
+  },
+  {
+    "id": 2,
+    "name": "Elliptical Trainer",
+    "exercise_type_id": 1
+  },
+  {
+    "id": 3,
+    "name": "Rowing Machine",
+    "exercise_type_id": 1
+  },
+  {
+    "id": 4,
+    "name": "Stairmaster",
+    "exercise_type_id": 1
+  },
+  {
+    "id": 5,
+    "name": "Stationary Bicycle",
+    "exercise_type_id": 1
+  },
+  {
+    "id": 6,
+    "name": "Treadmill",
+    "exercise_type_id": 1
+  },
+  {
+    "id": 7,
+    "name": "Cycling",
+    "exercise_type_id": 1
+  },
+  {
+    "id": 8,
+    "name": "Inline Skating",
+    "exercise_type_id": 1
+  },
+  {
+    "id": 9,
+    "name": "Jogging",
+    "exercise_type_id": 1
+  },
+  {
+    "id": 10,
+    "name": "Nordic Walking",
+    "exercise_type_id": 1
+  },
+  {
+    "id": 11,
+    "name": "Squat",
+    "exercise_type_id": 2
+  },
+  {
+    "id": 12,
+    "name": "Leg Press",
+    "exercise_type_id": 2
+  },
+  {
+    "id": 13,
+    "name": "Lunge",
+    "exercise_type_id": 2
+  },
+  {
+    "id": 14,
+    "name": "Calf Raise",
+    "exercise_type_id": 2
+  },
+  {
+    "id": 15,
+    "name": "Leg Extension",
+    "exercise_type_id": 2
+  },
+  {
+    "id": 16,
+    "name": "Deadlift",
+    "exercise_type_id": 2
+  },
+  {
+    "id": 17,
+    "name": "Leg Curl",
+    "exercise_type_id": 2
+  },
+  {
+    "id": 18,
+    "name": "Bench Press",
+    "exercise_type_id": 2
+  },
+  {
+    "id": 19,
+    "name": "Fly",
+    "exercise_type_id": 2
+  },
+  {
+    "id": 20,
+    "name": "Push Up",
+    "exercise_type_id": 2
+  },
+  {
+    "id": 21,
+    "name": "Bent-over Row",
+    "exercise_type_id": 2
+  },
+  {
+    "id": 22,
+    "name": "Chin-up",
+    "exercise_type_id": 2
+  },
+  {
+    "id": 23,
+    "name": "Pulldown",
+    "exercise_type_id": 2
+  },
+  {
+    "id": 24,
+    "name": "Pullup",
+    "exercise_type_id": 2
+  },
+  {
+    "id": 25,
+    "name": "Shoulder Shrug",
+    "exercise_type_id": 2
+  },
+  {
+    "id": 26,
+    "name": "Front Raise",
+    "exercise_type_id": 2
+  },
+  {
+    "id": 27,
+    "name": "Handstand Pushup",
+    "exercise_type_id": 2
+  },
+  {
+    "id": 28,
+    "name": "Lateral Raise",
+    "exercise_type_id": 2
+  },
+  {
+    "id": 29,
+    "name": "Military Press",
+    "exercise_type_id": 2
+  },
+  {
+    "id": 30,
+    "name": "Shoulder Press",
+    "exercise_type_id": 2
+  },
+  {
+    "id": 31,
+    "name": "Upright Row",
+    "exercise_type_id": 2
+  },
+  {
+    "id": 32,
+    "name": "Rear Delt Raise",
+    "exercise_type_id": 2
+  },
+  {
+    "id": 33,
+    "name": "Biceps Curl",
+    "exercise_type_id": 2
+  },
+  {
+    "id": 34,
+    "name": "Dip",
+    "exercise_type_id": 2
+  },
+  {
+    "id": 35,
+    "name": "Pushdown",
+    "exercise_type_id": 2
+  },
+  {
+    "id": 36,
+    "name": "Triceps Extension",
+    "exercise_type_id": 2
+  },
+  {
+    "id": 37,
+    "name": "Crunch",
+    "exercise_type_id": 2
+  },
+  {
+    "id": 38,
+    "name": "Sit-up",
+    "exercise_type_id": 2
+  },
+  {
+    "id": 39,
+    "name": "Leg Raise",
+    "exercise_type_id": 2
+  },
+  {
+    "id": 40,
+    "name": "Back Extension",
+    "exercise_type_id": 2
+  },
+  {
+    "id": 41,
+    "name": "Hyperextension",
+    "exercise_type_id": 2
+  },
+  {
+    "id": 42,
+    "name": "Basketball",
+    "exercise_type_id": 3
+  },
+  {
+    "id": 43,
+    "name": "Baseball",
+    "exercise_type_id": 3
+  },
+  {
+    "id": 44,
+    "name": "Football",
+    "exercise_type_id": 3
+  },
+  {
+    "id": 45,
+    "name": "Hockey",
+    "exercise_type_id": 3
+  },
+  {
+    "id": 46,
+    "name": "Golf",
+    "exercise_type_id": 3
+  },
+  {
+    "id": 47,
+    "name": "Water Polo",
+    "exercise_type_id": 3
+  },
+  {
+    "id": 48,
+    "name": "Swimming",
+    "exercise_type_id": 1
+  },
+  {
+    "id": 49,
+    "name": "Skiing",
+    "exercise_type_id": 3
+  },
+  {
+    "id": 50,
+    "name": "Skateboarding",
+    "exercise_type_id": 3
+  },
+  {
+    "id": 51,
+    "name": "Hang Gliding",
+    "exercise_type_id": 3
+  },
+  {
+    "id": 52,
+    "name": "Snowboarding",
+    "exercise_type_id": 3
+  },
+  {
+    "id": 53,
+    "name": "Fishing",
+    "exercise_type_id": 3
+  },
+  {
+    "id": 54,
+    "name": "Hunting",
+    "exercise_type_id": 3
+  },
+  {
+    "id": 55,
+    "name": "Paintball",
+    "exercise_type_id": 3
+  },
+  {
+    "id": 56,
+    "name": "Kayaking",
+    "exercise_type_id": 3
+  },
+  {
+    "id": 57,
+    "name": "Hiking",
+    "exercise_type_id": 3
+  },
+  {
+    "id": 58,
+    "name": "Tennis",
+    "exercise_type_id": 3
+  },
+  {
+    "id": 59,
+    "name": "Canoeing",
+    "exercise_type_id": 3
+  },
+  {
+    "id": 60,
+    "name": "Kitesurfing",
+    "exercise_type_id": 3
+  },
+  {
+    "id": 61,
+    "name": "Gymnastics",
+    "exercise_type_id": 3
+  },
+  {
+    "id": 62,
+    "name": "Bowling",
+    "exercise_type_id": 3
+  },
+  {
+    "id": 63,
+    "name": "Boxing",
+    "exercise_type_id": 3
+  },
+  {
+    "id": 64,
+    "name": "Auto racing",
+    "exercise_type_id": 3
+  },
+  {
+    "id": 65,
+    "name": "Skating",
+    "exercise_type_id": 3
+  },
+  {
+    "id": 66,
+    "name": "Squash",
+    "exercise_type_id": 3
+  },
+  {
+    "id": 67,
+    "name": "Rodeo",
+    "exercise_type_id": 3
+  },
+  {
+    "id": 68,
+    "name": "Volleyball",
+    "exercise_type_id": 3
+  },
+  {
+    "id": 69,
+    "name": "Soccer",
+    "exercise_type_id": 3
+  },
+  {
+    "id": 70,
+    "name": "Darts",
+    "exercise_type_id": 3
+  },
+  {
+    "id": 71,
+    "name": "Table Tennis",
+    "exercise_type_id": 3
+  },
+  {
+    "id": 72,
+    "name": "Cricket",
+    "exercise_type_id": 3
+  },
+  {
+    "id": 73,
+    "name": "Skydiving",
+    "exercise_type_id": 3
+  },
+  {
+    "id": 74,
+    "name": "Aquafit",
+    "exercise_type_id": 4
+  },
+  {
+    "id": 75,
+    "name": "Belly Dancing",
+    "exercise_type_id": 4
+  },
+  {
+    "id": 76,
+    "name": "Bootcamp Conditioning",
+    "exercise_type_id": 4
+  },
+  {
+    "id": 77,
+    "name": "Cardio Jam",
+    "exercise_type_id": 4
+  },
+  {
+    "id": 78,
+    "name": "Cycle Zone",
+    "exercise_type_id": 4
+  },
+  {
+    "id": 79,
+    "name": "Hip Hop",
+    "exercise_type_id": 4
+  },
+  {
+    "id": 80,
+    "name": "Kickbox Cardio",
+    "exercise_type_id": 4
+  },
+  {
+    "id": 81,
+    "name": "Club Boxing",
+    "exercise_type_id": 4
+  },
+  {
+    "id": 82,
+    "name": "Mat Pilates",
+    "exercise_type_id": 4
+  },
+  {
+    "id": 83,
+    "name": "Senior Fit",
+    "exercise_type_id": 4
+  },
+  {
+    "id": 84,
+    "name": "Step plus Abs",
+    "exercise_type_id": 4
+  },
+  {
+    "id": 85,
+    "name": "Step II plus Abs",
+    "exercise_type_id": 4
+  },
+  {
+    "id": 86,
+    "name": "Step Circuit",
+    "exercise_type_id": 4
+  },
+  {
+    "id": 87,
+    "name": "Step Sculpt",
+    "exercise_type_id": 4
+  },
+  {
+    "id": 88,
+    "name": "Striding",
+    "exercise_type_id": 4
+  },
+  {
+    "id": 89,
+    "name": "Yoga",
+    "exercise_type_id": 4
+  },
+  {
+    "id": 90,
+    "name": "Yoga Basics",
+    "exercise_type_id": 4
+  }
+]

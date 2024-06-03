@@ -1,0 +1,403 @@
+/* Variables */
+
+:root {
+    --dark-bg-color: #2A241C;
+    --dark-main-color: #F7F100;
+    --dark-second-color: #3B362B;
+    --dark-text: #fff;
+    --dark-third-color: #5F5B4A;
+    --dark-fourth-color: #CEC800;
+    --dark-fifth-color: #FFFA2F;
+    --dark-sixth-color: #A5A100;
+}
+#m {
+    color: var(--dark-bg-color);
+    font-size: 14px;
+    font-family: Raleway, sans-serif;
+}
+
+.message, .question {
+    color: var(--dark-text);
+    font-size: 14px;
+    font-family: Raleway, sans-serif;
+    margin: 30px;
+}
+
+
+
+/* Importing fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400;500;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    background-color: var(--dark-bg-color);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Index */
+
+.body-container {
+    background-color: var(--dark-bg-color);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: calc(100vh - 192px);
+    justify-content: center;
+}
+
+.header-container {
+    background-color: var(--dark-main-color);
+    width: 100vw;
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.buffed-icon {
+    height: 50px;
+    left: 0;
+    margin: 30px;
+}
+
+.more-icon {
+    height: 35px;
+    margin: 30px;
+}
+
+.dropdown {
+    background-color: var(--dark-main-color);
+    position: fixed;
+    width: 100vw;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.3);
+}
+
+.dropdown > .dropdown-item {
+    color: var(--dark-bg-color);
+    font-size: 16px;
+    font-weight: 700;
+    font-family: Unbounded, sans-serif;
+    padding: 12px;
+    text-align: end;
+}
+
+.dropdown-hidden {
+    height: 0;
+    display: hidden;
+}
+
+.dropdown-hidden .dropdown-item {
+    opacity: 0;
+}
+
+.dropdown-shown {
+    height: fit-content;
+    display: block;
+}
+
+@keyframes drop {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 132px;
+    }
+}
+
+@keyframes hide {
+    0% {
+        height: 132px;
+        display: block;
+    }
+    100% {
+        height: 0;
+        display: hidden;
+    }
+}
+
+@keyframes drop-item {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes hide-item {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.dropdown-shown {
+    animation: drop 0.8s ease-in-out;
+}
+
+.dropdown-shown .dropdown-item {
+    animation: drop-item  1s ease-in;
+}
+
+.dropdown-hidden {
+    animation: hide 0.8s ease-in-out;
+}
+
+.dropdown-hidden .dropdown-item {
+    animation: hide-item  0.6s ease-out;
+}
+
+.body-container > .text-container {
+    width: clamp(100px, calc(100vw - 80px), 500px);
+    background-color: var(--dark-second-color);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    color: var(--dark-text);
+    padding: clamp(20px, 30px, 40px);
+    border-radius: 16px;
+}
+
+.body-container > .text-container > h2 {
+    font-size: 24px;
+    font-family: Unbounded, sans-serif;
+    font-weight: 900;
+    padding: 0 0 5px 0;
+    width: fit-content;
+    border-bottom: solid var(--dark-main-color) 5px;
+}
+
+.body-container > .text-container > .small-text {
+    font-family: Raleway, sans-serif;
+    color: var(--dark-text);
+    font-weight: 200;
+    font-size: 16px;
+    padding-bottom: 8px;
+}
+
+button {
+    font-family: Unbounded, sans-serif;
+    font-size: 14px;
+    font-weight: 900;
+    padding: 14px 20px;
+    border-radius: 10px;
+    border: none;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.main-button {
+    background-color: var(--dark-main-color);
+    color: var(--dark-bg-color);
+    
+}
+
+.second-button {
+    background-color: var(--dark-third-color);
+    color: var(--dark-main-color);
+}
+
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-color: var(--dark-second-color);
+    width: 100vw;
+}
+
+.bottom-nav img {
+    height: 42px;
+    margin: 20px 20px;
+}
+
+.bottom-nav a {
+    padding: 0;
+}
+
+/* Login */
+
+.login-container {
+    background-color: var(--dark-bg-color);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+}
+
+.buffed-icon-yellow {
+    height: 60px;
+    margin: 30px;
+}
+
+.form-container {
+    width: clamp(100px, calc(100vw - 80px), 500px);
+    background-color: var(--dark-fifth-color);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    padding: clamp(20px, 30px, 40px);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container > h2 {
+    color: var(--dark-bg-color);
+    font-size: 24px;
+    font-family: Unbounded, sans-serif;
+    font-weight: 900;
+    padding: 0 0 5px 0;
+    width: fit-content;
+    border-bottom: solid var(--dark-sixth-color) 5px;
+}
+
+.form-container input {
+    background-color: #3B362B;
+    color: var(--dark-main-color);
+    font-family: Unbounded, sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    width: 100%;
+    border-radius: 8px;
+    border: none;
+    padding: 10px;
+    margin: 12px;
+    text-align: center;
+}
+
+.form-container input:focus {
+    outline: none;
+}
+
+.submit-button {
+    margin: 12px;
+    background-color: #2A241C;
+    color: #F7F100;
+}
+
+.text-link {
+    color: var(--dark-sixth-color);
+    font-size: 14px;
+    font-weight: 500;
+    font-family: Raleway, sans-serif;
+    margin: 10px;
+}
+
+.text-link span {
+    font-weight: 900;
+}
+
+/* Plany */
+
+.training-container {
+    background-color: var(--dark-bg-color);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: calc(100vh - 192px);
+}
+
+.training-container > .text-container {
+    width: clamp(100px, calc(100vw - 80px), 500px);
+    background-color: var(--dark-second-color);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    color: var(--dark-text);
+    padding: clamp(20px, 30px, 40px);
+    border-radius: 16px;
+    margin: 30px;
+}
+
+.training-container > .text-container > h2 {
+    font-size: 24px;
+    font-family: Unbounded, sans-serif;
+    font-weight: 900;
+    padding: 0 0 5px 0;
+    width: fit-content;
+    border-bottom: solid var(--dark-main-color) 5px;
+}
+
+.training-container > .text-container > .small-text {
+    font-family: Raleway, sans-serif;
+    color: var(--dark-text);
+    font-weight: 200;
+    font-size: 16px;
+    padding-bottom: 8px;
+    text-align: center;
+}
+
+.training-container > .text-container > .small-text select, input {
+    width: 100%;
+    background-color: #ffffff;
+    color: var(--dark-bg-color);
+    font-family: Unbounded, sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    outline: none;
+    border: none;
+    text-align: center;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+}
+
+.training-container > .text-container > .training-plan {
+    font-family: Raleway, sans-serif;
+    color: var(--dark-text);
+    font-weight: 600;
+    font-size: 16px;
+    padding-bottom: 8px;
+}
+
+.training-container > .text-container > .training-plan > p {
+    font-family: Unbounded, sans-serif;
+    color: var(--dark-text);
+    font-weight: 900;
+    font-size: 16px;
+}
+
+.training-container > .text-container > .training-plan div {
+    padding: 0 0 10px 0;
+}
+
+.training-container > .text-container .create-button {
+    background-color: var(--dark-fifth-color);
+    width: 100%;
+    color: var(--dark-bg-color);
+}
+
+.error-text {
+    color:#b91919;
+    font-size: 16px;
+    font-family: Raleway, sans-serif;
+    font-weight: 900;
+}
+
+.page-icon {
+        height: 45px;
+        margin: 30px;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+            <link rel="stylesheet" href="style.css">
+        </head>
+        <body>
+            <div class="header-container">
+                <a href='/'><img class="buffed-icon" src="/icons/buffed_icon.svg"></a>
+            </div>
+            <div class = 'chat' id = 'chat'>
+                
+            </div>
+            <div class = 'Chatform'>
+                <div class="training-container">
+                    <div class="text-container">
+                        <div class="small-text">
+                
+                    <select id="m" style="width: 100%">
+                        <option value="1">What is calisthenics?</option>
+                        <option value="2">How many times a week should I train?</option>
+                        <option value="3">How long will it take me to bench press 100kg as a beginner?</option>
+                        <option value="4">What is a deadlift?</option>
+                        <option value="5">Should I train with a personal trainer?</option>
+                        <option value="6">Why should I start training?</option>
+                    </select>
+                    <button class="submit-button" type="button" onclick = "ask()">Ask</button>
+            </div>
+        </div>
+        </div>
+    </div>
+            <script>
+                function ask() {
+                    let message = document.getElementById('m').value;
+                    var answer = ""
+                    switch (message) {
+                    case "1":
+                        answer += `
+                        <div class = 'question'>What is calisthenics?</div>
+                        <div class = 'message'>
+                        Calisthenics is a type of workout that uses a personâ€™s body weight with little or no equipment. The exercises involve movements that use large muscle groups, such as pushups. People typically perform these exercises at a moderate pace. They help to improve coordination, flexibility, and strength.
+                        </div>`
+                    break;
+                    case "2":
+                        answer += `
+                        <div class = 'question'>How many times a week should I train?</div>
+                        <div class = 'message'>
+                        Analysis show that the most efficient training plan is 4 days of training and 3 days of rest. This way your muscles are trained often enough but you also have time to regenerate
+                        </div>`
+                    break;
+                    case "3":
+                        answer+= `
+                        <div class = 'question'>How long will it take me to bench press 100kg as a beginner?</div>
+                        <div class = 'message'>
+                        It depends on your genetics. However, keeping a good diet and training regularly, you should be able to achieve it in a few months
+                        </div>
+                    `
+                    break;
+                    case "4":
+                        answer += `
+                        <div class = 'question'>What is a deadlift?</div>
+                        <div class = 'message'>
+                            The deadlift is a movement in which your hips hinge backward to lower down and pick up a weighted barbell or kettlebell from the floor. Your back is flat throughout the movement.
+                        </div>    
+                        `
+                        break;
+                    case "5":
+                        answer += `
+                        <div class = 'question'>Should I train with a personal trainer?</div>
+                        <div class = 'message'>
+                            It is a good idea but some can't afford it. It is perfectly safe to train on your own as long as you don't train without any knowledge
+                        </div>
+                        `
+                        break;
+                    case "6":
+                        answer += `
+                        <div class = 'question'>Why should I start training?</div>
+                        <div class = 'message'>
+                            Apart from obvious physical benefits, it helps your mental health and enables you to relax
+                        </div>
+                        `
+                    }
+                    document.getElementById('chat').innerHTML += answer;
+                }
+            </script>
+        </body>
+    </html>

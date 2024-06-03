@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Traning Plan</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="header-container">
+      <a href="../"><img class="buffed-icon" src="/icons/buffed_icon.svg"></a>
+      <img class="page-icon" src="/icons/timetable_icon_dark.svg">
+  </div>
+    <div class="training-container">
+
+
+      <div class="text-container">
+    <h2>Create your own traning plan:</h2>
+
+<div class="small-text">
+    <p>Day:</p>
+    <select id="day">
+      <option value="Monday">Monday</option>
+      <option value="Tuesday">Tuesday</option>
+      <option value="Wednesday">Wednesday</option>
+      <option value="Thursday">Thursday</option>
+      <option value="Friday">Friday</option>
+      <option value="Saturday">Saturday</option>
+      <option value="Sunday">Sunday</option>
+    </select>
+
+    <p>Exercise:</p>
+    <select id="exe">
+      <option value="Squat">Squat</option>
+      <option value="Deadlift">Deadlift</option>
+      <option value="Bench Press">Bench Press</option>
+      <option value="Push Up">Push Up</option>
+      <option value="Pullup">Pullup</option>
+      <option value="Handstand Pushup">Handstand Pushup</option>
+    </select>
+    <p>Reps:</p>
+    <input id="reps" type="number" min="1" max="999" value="1" />
+    <p>Weight(kg):</p>
+    <input id="weight" type="number" min="1" max="999" value="1" step="0.25"/>
+    <div class="button-container">
+    <button class="second-button" onclick="cum()">🢀</button>
+    <button class="main-button" onclick="kamkar()">+</button>
+    </div>
+</div>
+</div>
+
+
+    <div class="text-container">
+      <div class="training-plan">
+    <p>Monday:</p>
+    <div id="Monday"></div>
+    <p>Tuesday:</p>
+    <div id="Tuesday"></div>
+    <p>Wednesday:</p>
+    <div id="Wednesday"></div>
+    <p>Thursday:</p>
+    <div id="Thursday"></div>
+    <p>Friday:</p>
+    <div id="Friday"></div>
+    <p>Saturday:</p>
+    <div id="Saturday"></div>
+    <p>Sunday:</p>
+    <div id="Sunday"></div>
+  </div>
+
+    <form action="" method="post">
+        <input type="hidden" name="cwiczenia" id="cwiczenia">
+        <button type="submit" class="create-button" value="Create">Create</button>
+    </form>
+
+  </div>
+  </div>
+  </div>
+  </div>
+    <script>
+
+    let array = []; 
+    setInterval(function() {
+        cwiczenia.value = JSON.stringify(array);
+    }, 100);
+
+      function kamkar() {
+        let day = document.getElementById("day").value;
+        let exe = document.getElementById("exe").value;
+        let reps = document.getElementById("reps").value;
+        let weight = document.getElementById("weight").value;
+        let combined = exe + ", Reps: " + reps + ", Weight: " + weight + "kg";
+
+        array.push(createObject(day, exe, reps, weight));
+
+        switch (day) {
+          case "Monday":
+            document.getElementById("Monday").innerHTML += "<p>" + combined;
+            break;
+          case "Tuesday":
+            document.getElementById("Tuesday").innerHTML += "<p>" + combined;
+            break;
+          case "Wednesday":
+            document.getElementById("Wednesday").innerHTML += "<p>" + combined;
+            break;
+          case "Thursday":
+            document.getElementById("Thursday").innerHTML += "<p>" + combined;
+            break;
+          case "Friday":
+            document.getElementById("Friday").innerHTML += "<p>" + combined;
+            break;
+          case "Saturday":
+            document.getElementById("Saturday").innerHTML += "<p>" + combined;
+            break;
+          case "Sunday":
+            document.getElementById("Sunday").innerHTML += "<p>" + combined;
+            break;
+        }
+      }
+      function cum() {
+        let ass = array[array.length - 1].day;
+        let e = document.getElementById(ass);
+        console.log(e);
+        let cock = e.lastChild;
+        e.removeChild(cock);
+        array.pop();
+      }
+
+      function createObject(d, e, r, w) {
+        let obj = { day: d, exercise: e, reps: r, weight: w };
+        return obj;
+      }
+    </script>
+  </body>
+</html>

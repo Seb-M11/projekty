@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUFFED Gym App</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <div class="header-container">
+        <img class="buffed-icon" src="/icons/buffed_icon.svg">
+        <img class="more-icon" src="/icons/more_icon.svg" onclick="dropdown()">
+    </div>
+    <div class="dropdown dropdown-hidden" id="dropdown">
+        <div class="dropdown-item"><a href="bmi">BMI calculator</a></div>
+        <div class="dropdown-item"><a href="chat">Chat bot</a></div>
+        <div class="dropdown-item"><a href="logout">Log out</a></div>
+    </div>
+    <div class="body-container">
+        <div class="text-container">
+            <h2>Workout app</h2>
+            <p class="small-text">
+                Our training app will introduce you into the beautiful world of gym, pump and gains. It will also help you achieve your goals, stick to your diet and make constant progress. We would be grateful for sharing.
+            </p>
+        </div>
+    </div>
+    <nav class="bottom-nav">
+        <a href="plany"><img src="icons/timetable_icon.svg"></a>
+        <a href="trening"><img src="icons/muscle_icon.svg"></a>
+        <a href="dieta"><img src="icons/diet_icon.svg"></a>
+    </nav>
+    <script>
+
+        function dropdown() {
+            let dropdown = document.getElementById("dropdown");
+            dropdown.classList.toggle("dropdown-shown");
+            dropdown.classList.toggle("dropdown-hidden");
+        }
+    </script>
+</body>
+</html>

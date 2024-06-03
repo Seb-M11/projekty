@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration error</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <script src="server.js"></script>
+    <body>
+        <div class="login-container">
+            <img src="icons/buffed_icon_yellow.svg" class="buffed-icon-yellow">
+        <form class="form-container" action="/register" method="post" id="register">
+            <input placeholder="Name" type="text" id="name" name="name" required value=<%=name%>><br>
+            <input placeholder="Surame" type="text" id="surname" name="surname" required value=<%=surname%>><br>
+            <input placeholder="Login" type="text" id="login" name="login" value=<%=login%>><br>
+            <input placeholder="Password" type="password" id="pass" name="pass" value=<%=pass%>><br>
+            <input placeholder="Confirm password" type="password" id="pass1" name="pass1" value=<%=pass1%>><br><p class="error-text">Password error</p>
+            <button type="submit" name="login"class="submit-button" >Register</button>
+        </form>
+    </div>
+        
+    </body>
+</html>
